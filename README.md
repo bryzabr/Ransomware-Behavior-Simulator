@@ -1,54 +1,58 @@
-# Ransomware-Behavior-Simulator
-Laboratório em Python para criptografia e descriptografia de arquivos utilizando Fernet, com geração e gerenciamento de chaves.
+# Projeto de Criptografia e Descriptografia de Arquivos
 
-Criptografia e Descriptografia de Arquivos com Python
+## Sobre o projeto
 
-Sobre o projeto
+Este projeto tem como objetivo demonstrar, em um laboratório controlado, o funcionamento da criptografia e descriptografia de arquivos utilizando Python e a biblioteca Cryptography.
 
-Projeto desenvolvido em Python para estudar o processo de criptografia e descriptografia de arquivos utilizando a biblioteca Cryptography e o módulo Fernet.
+A atividade envolve geração e armazenamento de chaves criptográficas, leitura e escrita de arquivos e recuperação dos dados por meio da descriptografia.
 
-O laboratório utiliza dois scripts: um responsável por gerar uma chave e criptografar os arquivos de teste, e outro responsável por carregar essa chave e realizar a descriptografia.
-
-Tecnologias utilizadas
+## Ferramentas utilizadas
 
 - Python
-- Cryptography (Fernet)
-- OS
+- Cryptography
+- Fernet
+- Módulo OS
 
-Funcionamento
+## Atividades realizadas
 
-1. Criptografia ("ransoware.py")
+### 1. Geração de chave criptográfica
 
-- Geração de uma chave utilizando Fernet.
-- Armazenamento da chave em um arquivo ".key".
-- Busca de arquivos dentro do diretório "test_files".
-- Criptografia dos arquivos encontrados.
+- Utilização do Fernet para gerar uma chave criptográfica.
+- Armazenamento da chave em um arquivo `.key`.
+- Carregamento da chave para utilização nas operações.
 
-2. Descriptografia ("descriptografar.py")
+### 2. Criptografia de arquivos
+
+- Localização dos arquivos presentes no diretório de testes.
+- Leitura dos arquivos em modo binário.
+- Criptografia dos dados utilizando Fernet.
+- Gravação dos dados criptografados.
+
+### 3. Descriptografia de arquivos
 
 - Carregamento da chave criptográfica.
-- Busca dos arquivos no diretório "test_files".
-- Descriptografia dos arquivos utilizando Fernet.
-- Recuperação do conteúdo original.
-
-Estrutura do projeto
+- Localização dos arquivos de teste.
+- Descriptografia dos dados utilizando Fernet.
+- Recuperação do conteúdo original dos arquivos.
 
 ## Estrutura do projeto
 
     criptografia-de-arquivos/
+    │
     ├── README.md
     ├── ransoware.py
     ├── descriptografar.py
+    │
     └── test_files/
         ├── senhas.txt
         └── dados_confidenciais
 
-O arquivo "chave.key" é gerado durante a execução do script de criptografia e não deve ser enviado ao repositório público.
+## Considerações de segurança
 
-Objetivo
+O projeto utiliza criptografia simétrica por meio do Fernet, que oferece confidencialidade e autenticação dos dados.
 
-Praticar conceitos de Python, manipulação de arquivos, criptografia simétrica e gerenciamento de chaves, entendendo na prática como funciona o processo de criptografia e recuperação de dados.
+A chave criptográfica é necessária para realizar a recuperação dos arquivos. Por isso, seu armazenamento deve ser feito com segurança.
 
-Aviso
+## Aviso
 
-Projeto desenvolvido exclusivamente para fins educacionais, com execução em ambiente controlado e utilização de arquivos de teste.
+Este projeto possui finalidade exclusivamente educacional. Os testes devem ser realizados somente em ambientes controlados, utilizando arquivos próprios e de teste.
