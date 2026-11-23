@@ -2,7 +2,7 @@ from cryptography.fernet import Fernet
 import os
 
 def carregar_chave():
-    return open("chave.key" "rb").read
+    return open("chave.key", "rb").read()
 
 def descriptografar_arquivo(arquivo,chave):
     f = Fernet(chave)
@@ -22,8 +22,11 @@ def encontrar_arquivos(diretorio):
     return lista
 
 def main():
-    chave = carregar_chave ()
+    chave = carregar_chave()
     arquivos = encontrar_arquivos("test_files")
     for arquivo in arquivos:
         descriptografar_arquivo(arquivo, chave)
     print("descriptografado")
+
+if __name__== "__main__":
+    main()
