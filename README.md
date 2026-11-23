@@ -33,15 +33,15 @@ Funcionamento
 
 Estrutura do projeto
 
-criptografia-de-arquivos/
-│
-├── README.md
-├── ransoware.py
-├── descriptografar.py
-│
-└── test_files/
-    ├── senhas.txt
-    └── dados_confidenciais
+## Estrutura do projeto
+
+    criptografia-de-arquivos/
+    ├── README.md
+    ├── ransoware.py
+    ├── descriptografar.py
+    └── test_files/
+        ├── senhas.txt
+        └── dados_confidenciais
 
 O arquivo "chave.key" é gerado durante a execução do script de criptografia e não deve ser enviado ao repositório público.
 
