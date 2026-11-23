@@ -40,8 +40,8 @@ criptografia-de-arquivos/
 ├── descriptografar.py
 │
 └── test_files/
-    ├── dados_confidenciais
     ├── senhas.txt
+    └── dados_confidenciais
 
 O arquivo "chave.key" é gerado durante a execução do script de criptografia e não deve ser enviado ao repositório público.
 
